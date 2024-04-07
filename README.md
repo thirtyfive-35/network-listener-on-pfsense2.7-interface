@@ -36,6 +36,12 @@ I developed a network listener on a page added to the Pfsense 2.7 interface. By 
 ```
 
 ## Compile C code in freeBSD-14.0 and transfer
+
+### Change the codes on lines 182 and 17 according to the number of ports to listen. change MAX_PACKETS according to you need.
+![Ekran görüntüsü 2024-04-08 004822](https://github.com/thirtyfive-35/network-listener-on-pfsense2.7-interface/assets/99458931/8f8cdc5b-728d-43d8-b209-aef9fb94b5f4)
+![Ekran görüntüsü 2024-04-08 004838](https://github.com/thirtyfive-35/network-listener-on-pfsense2.7-interface/assets/99458931/0290fa36-7bc2-41a0-82bf-386e8353c074)
+
+
 ```bash
   gcc v9.c -o network -lpcap
 ```
