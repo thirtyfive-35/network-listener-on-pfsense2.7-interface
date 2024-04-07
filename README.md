@@ -35,7 +35,7 @@ I developed a network listener on a page added to the Pfsense 2.7 interface. By 
   scp cert.sh root@192.168.1.1://usr/local/www/sertifika
 ```
 
-# Compile C code in freeBSD-14.0 and transfer
+## Compile C code in freeBSD-14.0 and transfer
 ```bash
   gcc v9.c -o network -lpcap
 ```
