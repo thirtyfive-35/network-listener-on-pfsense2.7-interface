@@ -15,7 +15,7 @@
 ```
 
 
-# transfer that with scp
+transfer that with scp
 
 ```bash
   scp execute_ccode.php stop_analyzer.php packet_analyzer.php head.inc root@192.168.1.1://usr/local/www 
@@ -33,7 +33,7 @@
 ```bash
   scp cert.sh root@192.168.1.1://usr/local/www/sertifika
 ```
-#Compile C code in freeBSD-14.0.
+Compile C code in freeBSD-14.0.
 ```bash
   gcc v9.c -o network -lpcap
 ```
