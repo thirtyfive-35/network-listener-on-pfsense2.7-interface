@@ -8,14 +8,14 @@
 
 # Setup
 
-#Firsty use command below in virtual machine
+## Firsty use command below in virtual machine
 
 ```bash
   git clone https://github.com/thirtyfive-35/network-listener-on-pfsense2.7-interface.git 
 ```
 
 
-## transfer that with scp
+## transfer via scp and establish ssh connection
 
 ```bash
   scp execute_ccode.php stop_analyzer.php packet_analyzer.php head.inc root@192.168.1.1://usr/local/www 
@@ -29,11 +29,11 @@
   mkdir /usr/local/www/sertifika
 ```
 
-
 ```bash
   scp cert.sh root@192.168.1.1://usr/local/www/sertifika
 ```
-#Compile C code in freeBSD-14.0.
+
+#Compile C code in freeBSD-14.0 and transfer
 ```bash
   gcc v9.c -o network -lpcap
 ```
@@ -41,6 +41,7 @@
 ```bash
   scp network root@192.168.1.1://usr/local/www/sertifika
 ```
+## authorization of files
 
 ```bash
   chmod +x /usr/local/www/sertifika/cert.sh
@@ -49,7 +50,7 @@
 ```bash
   chmod +x /usr/local/www/sertifika/network
 ```
-#certification procedures
+## certification procedures
 
 ```bash
   cd /usr/local/www/sertifika
